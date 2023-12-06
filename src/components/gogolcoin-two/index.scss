@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+#gogolecoin_wrapper_two {
+  padding: 50px 0px 90px 0px;
+  text-align: center;
+
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    background: linear-gradient(180deg, #dda46f 0%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.165em;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 30px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+// @media only screen and (max-width: 600px) {
+//   .column_reverse {
+//     display: flex;
+//     flex-flow: column-reverse;
+//   }
+//   #googlecoin_wrapper h1 {
+//     font-size: 50px;
+//   }
+//   #googlecoin_wrapper .gogolcoin_btn {
+//     // margin-top: 10px;
+//   }
+//   #googlecoin_wrapper h1 {
+//     background-clip: text;
+//     background: -webkit-linear-gradient(180deg, #dda46f 0%, rgba(255, 255, 255, 0) 208%);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//   }
+//   #googlecoin_wrapper p {
+//     font-size: 16px;
+//     line-height: 35px;
+//   }
+// }
+
+// @media only screen and (min-width: 768px) {
+//   #googlecoin_wrapper p {
+//     font-size: 16px;
+//     line-height: 35px;
+//   }
+// }

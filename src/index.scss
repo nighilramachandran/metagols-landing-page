@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+* {
+  font-family: "Nunito";
+}
+.customecard {
+  width: 270px;
+  height: 274px;
+  position: relative;
+}
+.customecard:hover {
+  transition: transform 550ms;
+  .polygon {
+    transition: transform 550ms;
+    transform: translate3d(0px, -15px, 0px);
+  }
+}
+.customecard_small:hover {
+  transition: transform 550ms;
+  .polygon2 {
+    transition: transform 550ms;
+    transform: translate3d(0px, -15px, 0px);
+  }
+}
+
+.customecard_small {
+  width: 270px;
+  height: 222px;
+  position: relative;
+}
+.customecard,
+.customecard_small {
+  background: linear-gradient(180deg, #4d4f95 0%, #2b2d66 100%);
+  border: 2px solid #595a9a;
+  box-sizing: border-box;
+  box-shadow: 0px 24px 48px rgba(0, 1, 44, 0.157184);
+  border-radius: 12px;
+  .customecard_contents {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 75px 18px 0px;
+    gap: 10px;
+    h5 {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 35px;
+      text-align: center;
+      color: #ffffff;
+    }
+    h6 {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 35px;
+      text-align: center;
+      color: #ffffff;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 0px;
+    }
+    span {
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.495556);
+    }
+  }
+}
+.polygon {
+  position: absolute;
+  z-index: 1;
+  margin-top: -87px;
+  margin-left: 65px;
+  transition: transform 550ms;
+  &:hover {
+    transform: translate3d(0px, -15px, 0px);
+  }
+}
+.polygon2 {
+  position: absolute;
+  z-index: 1;
+  margin-top: -87px;
+  margin-left: -73px;
+  transition: transform 550ms;
+  &:hover {
+    transform: translate3d(0px, -15px, 0px);
+  }
+}

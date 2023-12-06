@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+#header_wrapper {
+  padding: 40px 0px 40px 0px;
+
+  // ================================
+
+  $width: 138px;
+  $height: 48px;
+  $primary_color: transparent;
+  $border_color--hover: lighten($primary_color, 80);
+  $stroke: 10px;
+  $border: $stroke solid darken($primary_color, 10);
+  $transition_duration: 100ms;
+  $pipeline_width: $width + $stroke;
+  $pipeline_height: $height + $stroke;
+  $pipes: 4;
+
+  // ==================================
+
+  .nav_items {
+    gap: 70px;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+  }
+  a {
+    color: white;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #a0b2f5 50%, #a0b2f5 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    &:active {
+      transform: scale(0.96);
+    }
+    &:hover {
+      transition: all 0.9s cubic-bezier(0, 0, 0.23, 1);
+      background-position: 0%;
+      cursor: pointer;
+    }
+  }
+}
+
+.svg-container {
+  position: relative;
+  width: 124px;
+  p {
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-transform: uppercase;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+  }
+  &:hover {
+    .foreground {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+.rect {
+  border: 1px solid;
+  border-color: #6357f6;
+  border-radius: 8px;
+  transition: all 0.2s;
+  transition-delay: 0.8s;
+  cursor: pointer;
+  &:hover {
+    border-color: transparent;
+    // border-color: #6457f600;
+    transition-delay: 0s;
+  }
+  .foreground {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-dasharray: 370;
+    stroke-dashoffset: 370;
+    stroke-width: 2;
+    stroke: #6357f6;
+    transition: all 1.2s ease;
+    cursor: pointer;
+    position: relative;
+  }
+}

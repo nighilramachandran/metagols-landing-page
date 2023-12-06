@@ -1,0 +1,84 @@
+#aboutus {
+  padding: 50px 0px 50px 0px;
+  .about {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+  h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+  .svg-container {
+    position: relative;
+    width: 154px;
+    p {
+      color: #fff;
+      position: absolute;
+      top: 32%;
+      left: 23%;
+      text-transform: uppercase;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      cursor: pointer;
+    }
+    &:hover {
+      .foreground {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+
+  .rect {
+    border: 1px solid;
+    border-color: #235181;
+    border-radius: 8px;
+    transition: all 0.2s;
+    transition-delay: 0.8s;
+    cursor: pointer;
+    &:hover {
+      border-color: transparent;
+      transition-delay: 0s;
+    }
+    .foreground {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke-dasharray: 391;
+      stroke-dashoffset: 391;
+      stroke-width: 2;
+      stroke: #235181;
+      transition: all 1.2s ease;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+}

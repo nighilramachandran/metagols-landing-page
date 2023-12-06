@@ -1,0 +1,28 @@
+import React from "react"
+import { Home } from "./pages/home"
+import { Routes, Route, BrowserRouter } from "react-router-dom"
+import { Layout } from "./widgets/layout"
+import { Team } from "./pages/team/team"
+import { Features } from "./pages/features/feature"
+import { JoinOurTeam } from "./pages/join our team/joinourteam"
+import { ContactusPage } from "./pages/contactus/contact"
+
+const PrivateRoutes = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="team" element={<Team />} />
+          <Route path="features" element={<Features />} />
+          <Route path="join-our-team" element={<JoinOurTeam />} />
+          <Route path="contact-us" element={<ContactusPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+
+
+export default PrivateRoutes

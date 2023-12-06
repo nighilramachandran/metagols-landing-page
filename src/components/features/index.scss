@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+#features_wrapper {
+  padding: 50px 0px 50px 0px;
+  .oval_middle_left {
+    position: absolute;
+    z-index: -1;
+    margin-top: -1508px;
+    margin-left: -73px;
+  }
+  .polygon_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  h4 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+  }
+  h1 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+  .custome_card_wrapper {
+    padding-top: 0px;
+  }
+  .polygon_alignments {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #features_wrapper .polygon_wrapper {
+    padding-top: 135px;
+  }
+  #features_wrapper {
+    padding: 0px;
+  }
+  #features_wrapper .polygon_alignments {
+    margin-top: 0px;
+  }
+  #features_wrapper h1 {
+    font-size: 49px;
+    line-height: 58px;
+  }
+  #features_wrapper p {
+    font-size: 15px;
+    line-height: 33px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #features_wrapper .polygon_wrapper {
+    padding-top: 135px;
+  }
+  #features_wrapper .polygon_alignments {
+    margin-top: 0px;
+  }
+  // #features_wrapper h1 {
+  //   font-size: 49px;
+  //   line-height: 58px;
+  // }
+  // #features_wrapper p {
+  //     font-size: 15px;
+  //     line-height: 33px;
+  // }
+}
+@media (min-width: 1200px) {
+  #features_wrapper .polygon_alignments {
+    margin-top: 100px;
+  }
+}

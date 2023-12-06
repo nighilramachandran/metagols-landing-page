@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+#Footer{
+    padding: 50px 0px 50px 0px;
+    text-align: center; 
+
+    .footer_items{ 
+        .footer_wrapper{
+            display: flex;
+            gap: 75px;
+            .footer_links_wrapper{
+                text-align: left; 
+                .footer_link{
+                    padding-left: 0px;
+                    list-style-type: none;
+                    a{
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 32px; 
+                        color: #FFFFFF;
+                        text-decoration: none; 
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    
+                        background-image: linear-gradient(
+                            to right,
+                            #A0B2F5 50%,
+                            #A0B2F5 50%,
+                            white 50%);
+                            background-size: 200% 100%;
+                            background-position: 100%;
+                        &:active {
+                        transform: scale(0.96);
+                        }
+                        &:hover {
+                        // background: linear-gradient(180deg, #2E58EE 0%, #A0B2F5 87.5%);
+                        transition: all 0.9s cubic-bezier(0.000, 0.000, 0.230, 1);
+                        background-position: 0%;
+                        cursor: pointer;
+                        }
+                    }
+                } 
+                p{
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px; 
+                    letter-spacing: 3px;
+                    text-transform: uppercase; 
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    
+        .footer_items_col_one{
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+        
+        .footer_items_col_three{
+            display: flex;
+            gap: 10px;
+            .footer_social_card{
+                width: 48px;
+                height: 48px; 
+                background: #6357F6;
+                border-radius: 50%; 
+                display: flex;
+                justify-content: center;
+                 
+            }
+        }
+    } 
+    hr {
+        width: 1042px;
+        height: 1px; 
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.08;
+      }  
+      .main_footer{
+        padding-left: 125px;
+        padding-right: 125px;
+          .column_reverse{
+            display: flex;
+             justify-content: space-between; 
+          } 
+          h5{
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px; 
+            color: rgba(255, 255, 255, 0.502972);
+            text-decoration: none; 
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            
+                background-image: linear-gradient(
+                    to right,
+                    #A0B2F5 50%,
+                    #A0B2F5 50%,
+                    white 50%);
+                    background-size: 200% 100%;
+                    background-position: 100%;
+                &:active {
+                transform: scale(0.96);
+                }
+                &:hover {
+                // background: linear-gradient(180deg, #2E58EE 0%, #A0B2F5 87.5%);
+                transition: all 0.4s cubic-bezier(0.000, 0.000, 0.230, 1);
+                background-position: 0%;
+                cursor: pointer;
+                }
+          }
+          a{
+            text-decoration: none;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px; 
+            text-align: right; 
+            color: #FFFFFF;
+            text-decoration: none; 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        
+            background-image: linear-gradient(
+                to right,
+                #A0B2F5 50%,
+                #A0B2F5 50%,
+                white 50%);
+                background-size: 200% 100%;
+                background-position: 100%;
+            &:active {
+            transform: scale(0.96);
+            }
+            &:hover {
+            // background: linear-gradient(180deg, #2E58EE 0%, #A0B2F5 87.5%);
+            transition: all 0.9s cubic-bezier(0.000, 0.000, 0.230, 1);
+            background-position: 0%;
+            cursor: pointer;
+            }
+          }
+      } 
+}
+ 
+    @media only screen and (max-width: 600px) { 
+        #Footer { 
+            padding: 0px;
+        }
+        #Footer .main_footer {
+            display: grid;
+            padding: 0px;
+            justify-content: center;
+        }
+        .column_reverse{
+            display: flex;
+            flex-flow: column-reverse;
+            } 
+        #Footer .footer_items .footer_wrapper {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+        #Footer .footer_items .footer_wrapper .footer_links_wrapper .footer_link a { 
+            font-size: 13px; 
+        }
+    }
+    @media only screen and (max-width: 768px) { 
+        #Footer { 
+            padding: 0px;
+        }
+        #Footer .main_footer {
+            // display: flex;
+            // padding: 0px;
+            display: grid;
+            padding: 0px;
+            justify-content: center;
+        }
+        .column_reverse{
+            display: flex;
+            flex-flow: column-reverse;
+            } 
+        #Footer .footer_items .footer_wrapper {
+            display: flex;
+            gap: 25px;
+            justify-content: space-between;
+        }
+        #Footer .footer_items .footer_wrapper .footer_links_wrapper .footer_link a { 
+            font-size: 13px; 
+        }
+    }
+ 
+ 

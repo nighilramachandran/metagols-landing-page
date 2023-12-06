@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+#features_two_wrapper {
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  // .test{
+  //     cubic-bezier(0.22, 1, 0.36, 1)
+  // }
+  .logo_position {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+  }
+  @keyframes wiggle {
+    0%,
+    100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 12px;
+    }
+  }
+
+  .wiggle {
+    animation: wiggle 2.7s infinite;
+  }
+  h4 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  h1 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64px;
+    text-align: center;
+    color: #ffffff;
+    padding: 30px 0px 30px 0px;
+  }
+  h5 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #ffffff;
+    padding-bottom: 25px;
+  }
+  p {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.502972);
+  }
+  .custome_card_wrapper {
+    padding: 50px;
+    display: flex;
+  }
+}
+.swing {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  // float:left;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+  // 0%, 100% {
+  //     bottom: 0;
+  //   }
+  //   50% {
+  //     bottom:12px;
+  //   }
+}
+@media only screen and (max-width: 600px) {
+  .column_reverse {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  #features_two_wrapper {
+    padding: 0px;
+  }
+  #features_two_wrapper img {
+    padding-top: 50px;
+  }
+  #features_two_wrapper h4 {
+    padding-top: 50px;
+  }
+  #features_two_wrapper h1 {
+    font-size: 50px;
+    padding: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .column_reverse {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  #features_two_wrapper {
+    padding: 0px;
+  }
+  #features_two_wrapper img {
+    padding-top: 50px;
+  }
+  #features_two_wrapper h4 {
+    padding-top: 50px;
+  }
+  #features_two_wrapper h1 {
+    font-size: 50px;
+    padding: 0px;
+  }
+}
+
+.logo-bottom-light {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: 31.6%;
+  left: 38.5%;
+  bottom: 0px;
+  right: 0;
+}

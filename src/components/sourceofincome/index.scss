@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+#Sourceoficome {
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  .sourceofincome-left {
+    float: left;
+    h3 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: left;
+    }
+    h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 64px;
+      text-align: center;
+      background: linear-gradient(180deg, #2e58ee 0%, #a0b2f5 87.5%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: left;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 32px;
+      color: rgba(255, 255, 255, 0.502972);
+      text-align: left;
+    }
+  }
+  .sourceofincome-right-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .sourceofincome-right-content {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 1.5px;
+        color: #ffffff;
+        text-align: left;
+        margin: 0px;
+      }
+    }
+  }
+}

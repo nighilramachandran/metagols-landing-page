@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+#profit_wrapper {
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  .polygon_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  h4 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 40px;
+  }
+  // .custome_card_wrapper {
+  //   padding-top: 0px;
+  //   display: flex;
+  //   justify-content: center;
+  //   padding-bottom: 90px;
+  // }
+  .download_whitepaper_btn {
+    border: 1px solid #5a5b73;
+    background: transparent;
+    border-radius: 8px;
+    font-family: "Nunito";
+    width: 238px;
+    height: 48px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 50px;
+    &:active {
+      // transform: scale(0.96);
+      // box-shadow: 0px 0px 20px 9px;
+    }
+  }
+  .svg-container {
+    position: relative;
+    width: 238px;
+    margin-top: 50px;
+    p {
+      color: #fff;
+      position: absolute;
+      top: 30%;
+      left: 0%;
+      text-transform: uppercase;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      cursor: pointer;
+      margin: 0px;
+      width: 238px;
+    }
+    &:hover {
+      .foreground,
+      .foreground-download {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+  .rect {
+    border: 1px solid;
+    border-color: #4f5066;
+    border-radius: 8px;
+    transition: all 0.2s;
+    transition-delay: 0.8s;
+    cursor: pointer;
+    &:hover {
+      border-color: transparent;
+      transition-delay: 0s;
+    }
+    .foreground {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke-dasharray: 560;
+      stroke-dashoffset: 560;
+      stroke-width: 2;
+      stroke: #4f5066;
+      transition: all 1.2s ease;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  #profit_wrapper .polygon_wrapper {
+    padding-top: 135px;
+  }
+  #profit_wrapper {
+    padding: 0px;
+  }
+  #profit_wrapper .custome_card_wrapper {
+    padding-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #profit_wrapper .polygon_wrapper {
+    padding-top: 135px;
+  }
+  #profit_wrapper {
+    padding: 0px;
+  }
+  #profit_wrapper .custome_card_wrapper {
+    padding-bottom: 0px;
+  }
+}

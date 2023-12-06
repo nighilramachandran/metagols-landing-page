@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+#Contactus {
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  .contactus_card {
+    // max-width: 1170px;
+    width: 100%;
+    //   height: 304px;
+    background: linear-gradient(270deg, #4032e4 0%, #a097f2 100%), linear-gradient(180deg, #4d4f95 0%, #2b2d66 100%);
+    border: 2px solid rgba(255, 255, 255, 0.0782099);
+    border-right: 2px solid #4f43e7;
+    border-left: none;
+    box-sizing: border-box;
+    box-shadow: 0px 24px 48px rgba(0, 1, 44, 0.157184);
+    border-radius: 12px;
+    .contactus_card_first_col {
+      text-align: left;
+      padding: 65px 0px 0px 65px;
+    }
+    .contactus_card_second_col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .parent {
+        position: relative;
+      }
+      .contactus_btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:hover {
+          background-color: #483ae4;
+        }
+      }
+    }
+    .contactus_card_second_col img {
+      width: 100%;
+    }
+    .contactus_btn {
+      width: 170px;
+      height: 48px;
+      background: transparent;
+      border-radius: 8px;
+      font-family: "Nunito";
+      font-style: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-weight: 700;
+      letter-spacing: 1px;
+      background-color: #6357f6;
+      border-style: none;
+    }
+  }
+  h1 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 64px;
+    color: #ffffff;
+  }
+  p,
+  span {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  p {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  span {
+    color: rgba(255, 255, 255, 0.502972);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #Contactus .contactus_card .contactus_card_first_col {
+    text-align: center;
+    padding: 5px;
+  }
+  #Contactus .contactus_card .contactus_card_first_col p {
+    text-align: center !important;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #Contactus .contactus_card .contactus_card_first_col {
+    text-align: center;
+    padding: 10px;
+  }
+}

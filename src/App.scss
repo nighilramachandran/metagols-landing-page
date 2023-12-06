@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+
+*a {
+  cursor: pointer;
+}
+.disabled {
+  opacity: 0.5;
+}
+
+body {
+  background: #181942;
+}
+.right {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 100%;
+  height: 2550px;
+  margin-top: -469px;
+  /* margin-top: -179px; */
+  max-width: 100%;
+}
+.right_ {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 100%;
+  /* height: 2550px; */
+  /* margin-top: -454px; */
+  margin-top: -179px;
+  /* max-width: 100%; */
+}
+.oval_top_right {
+  z-index: -1;
+  position: absolute;
+  margin-top: -131px;
+  margin-left: -61px;
+  max-width: 100%;
+}
+
+.first-left {
+  /* position: absolute;
+  z-index: -1;
+  left: 0;
+  max-width: 100%; */
+
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  top: 2;
+  top: 1488px;
+  max-width: 100%;
+}
+.second-left {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  top: 9544px;
+  max-width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  #gogolecoin_wrapper h1 {
+    font-size: 52px;
+  }
+  #gogolecoin_wrapper_two h1 {
+    font-size: 48px;
+  }
+  .mobile-button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #features .our-featues-three p {
+    font-size: 10px !important;
+  }
+  .column_reverse {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  #welcome_container h4 {
+    font-size: 35px;
+  }
+  #features h1 {
+    font-size: 40px;
+    line-height: 65px;
+  }
+  #features {
+    .our-features,
+    .cryptocurrency,
+    .trading-service,
+    .our-features-two,
+    .our-featues-three,
+    .wallet-features,
+    .unique-service,
+    .solutions,
+    .learning-system {
+      padding: 40px 0px 20px 0px !important;
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .mobile-button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+// @media only screen and (min-width: 1200px) {
+//   #features .wallet-card h4 {
+//     font-size: 15px !important;
+//   }
+//   #features .wallet-card p {
+//     font-size: 10.5px !important;
+//   }
+// }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #features .wallet-card h4 {
+    font-size: 14px !important;
+  }
+  #features .wallet-card p {
+    font-size: 10.5px !important;
+  }
+}

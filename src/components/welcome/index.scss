@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+#welcome_container {
+  padding: 50px 0px 50px 0px;
+  display: flex;
+  @mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+    background: $bcolor;
+    -webkit-mask: url($url);
+    mask: url($url);
+    -webkit-mask-size: $x1 $y1;
+    mask-size: $x1 $y1;
+    border: $bor;
+    color: $col;
+  }
+  h2 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 0.3;
+  }
+  p {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+  }
+  h4 {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 43px;
+    line-height: 161.41%;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .welcome_btns {
+    // display: flex;
+    // // gap: 60px;
+    // padding-top: 50px;
+
+    button {
+      width: 154px;
+      height: 48px;
+      background: transparent;
+      border-radius: 8px;
+      font-family: "Nunito";
+      font-style: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-weight: 700;
+      letter-spacing: 1px;
+
+      // &:active {
+      //   // transform: scale(0.96);
+      //   // box-shadow: 0px 0px 20px 9px;
+      // }
+    }
+    .welcome_btn_signup {
+      background-color: #6357f6;
+      border-style: none;
+      &:hover {
+        background-color: #5547f3;
+      }
+    }
+
+    .welcome_btn_download {
+      border: 1px solid #5a5b73;
+    }
+  }
+  .svg-container {
+    position: relative;
+    width: 154px;
+    p {
+      color: #fff;
+      position: absolute;
+      top: 30%;
+      left: 17%;
+      text-transform: uppercase;
+      font-family: "Nunito";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      cursor: pointer;
+    }
+    &:hover {
+      .foreground {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+
+  .rect {
+    border: 1px solid;
+    border-color: #6357f6;
+    border-radius: 8px;
+    transition: all 0.2s;
+    transition-delay: 0.8s;
+    cursor: pointer;
+    &:hover {
+      border-color: transparent;
+      transition-delay: 0s;
+    }
+    .foreground {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke-dasharray: 391;
+      stroke-dashoffset: 391;
+      stroke-width: 2;
+      stroke: #6357f6;
+      transition: all 1.2s ease;
+      cursor: pointer;
+      position: relative;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .column_reverse {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  #welcome_container {
+    padding: 0px;
+  }
+  // #welcome_container .welcome_btns {
+  //   gap: 16px;
+  //   padding-top: 5px;
+  //   button {
+  //     width: 145px;
+  //   }
+  // }
+  #welcome_container p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+  #welcome_container img {
+    padding-top: 50px;
+  }
+}
+// @media (max-width: 768px) {
+//   .column_reverse {
+//     display: flex;
+//     flex-flow: column-reverse;
+//   }
+//   #welcome_container {
+//     padding: 0px;
+//   }
+//   #welcome_container p {
+//     font-size: 16px;
+//     line-height: 35px;
+//   }
+//   #welcome_container h4 {
+//     font-size: 35px;
+//   }
+//   #welcome_container .welcome_btns {
+//     gap: 16px;
+//     padding-top: 5px;
+//     button {
+//       width: 145px;
+//     }
+//   }
+//   #welcome_container img {
+//     padding-top: 50px;
+//   }
+// }
